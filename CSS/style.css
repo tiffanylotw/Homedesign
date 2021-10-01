@@ -1,0 +1,96 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+:root {
+  --bisque: bisque;
+  --aliceblue: aliceblue;
+}
+.main-container {
+  /* background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: multiply; 
+  background-image: url(../img/HomeDesign.jpeg);  */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/HomeDesign.jpeg);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 3rem 1rem;
+}
+#navbar ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 0.6rem;
+}
+#navbar ul li a {
+  text-decoration: none;
+  color: var(--bisque);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+#navbar ul li a:hover {
+  color: var(--aliceblue);
+  text-decoration: underline;
+  position: relative;
+  bottom: 0.5rem;
+}
+
+.content {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--aliceblue);
+}
+.content h1,
+h3 {
+  position: relative;
+  top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content h1 {
+  font-size: 50px;
+}
+.content h3 {
+  font-size: 20px;
+  margin: 1rem 0;
+}
+
+.button {
+  position: relative;
+  top: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  margin: 2rem;
+  padding: 0.5rem 1.5rem;
+  border: var(--bisque) 2px solid;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--bisque);
+  background: transparent;
+  text-align: center;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--bisque);
+  color: #666666;
+}
+footer {
+  color: var(--aliceblue);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 35%;
+}
